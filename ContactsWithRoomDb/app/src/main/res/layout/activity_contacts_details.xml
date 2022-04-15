@@ -50,6 +50,34 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/Btn_Call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_btn"
+            android:drawableStart="@drawable/ic_phone"
+            android:paddingLeft="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/Btn_Message"/>
+        <Button
+            android:id="@+id/Btn_Message"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_btn"
+            android:drawableStart="@drawable/ic_message"
+            android:paddingLeft="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Btn_Call"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
